@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.averageofmarks.MainActivity">
+
+    <EditText
+        android:id="@+id/SubjectAMarks"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="17dp"
+        android:ems="10"
+        android:hint="Subject A Marks"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/SubjectBMarks"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/SubjectCMarks"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="57dp"
+        android:ems="10"
+        android:hint="Subject C Marks"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/SubjectDMarks"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/SubjectBMarks" />
+
+    <EditText
+        android:id="@+id/SubjectBMarks"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="59dp"
+        android:ems="10"
+        android:hint="Subject B Marks"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/SubjectDMarks"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SubjectAMarks" />
+
+    <EditText
+        android:id="@+id/SubjectDMarks"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        android:ems="10"
+        android:hint="Subject D Marks"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/SubjectEMarks"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SubjectBMarks" />
+
+    <EditText
+        android:id="@+id/SubjectEMarks"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:hint="Subject E Marks"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/AverageMarks"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SubjectDMarks" />
+
+    <Button
+        android:id="@+id/AverageMarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="31dp"
+        android:text="Average Marks and Grade of all the Subjects"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/Average"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SubjectEMarks" />
+
+    <TextView
+        android:id="@+id/Average"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="25dp"
+        android:hint="Average"
+        android:textSize="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/CGPA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AverageMarks" />
+
+    <TextView
+        android:id="@+id/CGPA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:hint="CGPA"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Average" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
