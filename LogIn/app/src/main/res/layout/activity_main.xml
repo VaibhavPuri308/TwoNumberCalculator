@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Request"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="168dp"
+        android:ems="10"
+        android:hint="Enter your E-mail ID :"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/Forgot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/AskCredentials" />
+
+    <TextView
+        android:id="@+id/AskCredentials"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="71dp"
+        android:text="Enter your credentials, and Log In, or Sign Up :"
+        android:textSize="34dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:hint="Enter your Password :"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/LogIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="Log In"
+        app:layout_constraintBottom_toBottomOf="@+id/SignUp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/SignUp" />
+
+    <Button
+        android:id="@+id/SignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="131dp"
+        android:text="Sign Up"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/Forgot"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="56dp"
+        android:text="Forgot Password?"
+        android:textColorLink="#0653ED"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/LogIn"
+        app:layout_constraintStart_toEndOf="@+id/LogIn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

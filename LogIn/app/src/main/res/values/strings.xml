@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">LogIn</string>
+    <string name="you_data_has_been_stored_in_firebase">You data has been stored in Firebase</string>
+    <string name="profile">Profile</string>
+    <string name="you_can_forgot_your_password_too">You can forgot your password too.</string>
+    <string name="log_out">Log Out</string>
+    <string name="send_email">Send Email</string>
+    <string name="enter_your_e_mail_id">Enter your E-mail ID</string>
+    <string name="a_link_will_be_sent_to_your_registered_e_mail_id_to_reset_your_password">A link will be sent to your registered E-mail ID to reset your password.</string>
+    <string name="you_have_been_registered_in_firebase">You have been registered in Firebase.</string>
+</resources>
